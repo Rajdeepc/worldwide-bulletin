@@ -1,6 +1,9 @@
-# news-vue
+# news-buzz
 
-## Project setup
+A Vue JS Project with vue-router to show latest news and updates from around the world.
+You can choose your country and get to choose from what type of news you want to see. It also has a search feature to search over your faovorite topics
+
+### Project setup
 ```
 npm install
 ```
@@ -9,13 +12,17 @@ npm install
 ```
 npm run serve
 ```
+### Project Stack:
+ * VueJS
+ * Vue Router
+ * VueX
+ * SASS
 
-### Compiles and minifies for production
-```
-npm run build
-```
+ Please feel free to contribute. Raise a PR and send me over for a review.
 
-### Lints and fixes files
-```
-npm run lint
-```
+If you would like to donate to this project so that i can give dedicated time to scale this below is the link:
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](rajrock38@gmail.com)
+
+Credits: newsapi.org
+ 
