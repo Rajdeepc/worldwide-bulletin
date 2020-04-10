@@ -1,26 +1,29 @@
 <template>
   <div class="homepage-wrapper">
-   <Header></Header>
-   <router-view></router-view>
-   <Footer></Footer>
+    <Header></Header>
+    <div class="container-news">
+      <b-container>
+        <router-view></router-view>
+      </b-container>
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Header from './components/header/header'
-import Footer from './components/footer/footer.vue'
-
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer.vue";
 
 export default {
-  name: 'HomePage',
-  components :{
+  name: "HomePage",
+  components: {
     Header,
     Footer
-    },
+  },
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -38,5 +41,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.container-news {
+  background: #f5f5f5;
 }
 </style>
