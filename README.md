@@ -22,7 +22,10 @@ npm run serve
 
 If you would like to donate to this project so that i can give dedicated time to scale this below is the link:
 
+Check it out:
+![image](image.png)
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](rajrock38@gmail.com)
 
-Credits: newsapi.org
+Built-with: newsapi.org, vue-bootstrap
  

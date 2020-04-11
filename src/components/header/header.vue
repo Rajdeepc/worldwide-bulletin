@@ -18,7 +18,12 @@
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+          <b-form-input
+            size="sm"
+            class="mr-sm-2"
+            placeholder="Search"
+            v-model="searchValue"
+          ></b-form-input>
           <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
         </b-nav-form>
       </b-navbar-nav>
@@ -28,7 +33,20 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      searchValue: ""
+    };
+  },
+  methods: {
+    filteredCustomers(event){
+
+      this.searchValue = event.target.value;
+      // eslint-disable-next-line no-console
+      console.log(this.searchValue)
+    }
+  }
 };
 </script>
 
