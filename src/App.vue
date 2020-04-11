@@ -44,5 +44,9 @@ a {
 }
 .container-news {
   background: #f5f5f5;
+  min-height: 500px;
 }
+.container-news{
+  padding-top:20px;
+  }
 </style>

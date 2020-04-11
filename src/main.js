@@ -6,6 +6,9 @@ import VueRouter from 'vue-router'
 import Routes from './routes';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import moment from 'moment'
+
+Vue.prototype.moment = moment
 
 Vue.use(VueRouter)
 
@@ -19,7 +22,8 @@ Vue.config.productionTip = false
 const routes = Routes
 
 const router = new VueRouter({
-  routes // short for `routes: routes`
+  routes,
+  mode: 'history'
 })
 
 new Vue({

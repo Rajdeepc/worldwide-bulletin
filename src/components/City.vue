@@ -1,6 +1,5 @@
 <template>
   <div class="city-wrapper">
-    <h1>I am in City</h1>
     <b-row>
       <b-col cols="3" v-for="news in sectionData.articles" :key="news.source.id">
         <NewsContent :item="news"></NewsContent>
